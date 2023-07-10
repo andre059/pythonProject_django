@@ -6,5 +6,6 @@ def index(request):
         name = request.POST.get('name')
         email = request.POST.get('email')
         message = request.POST.get('message')
-        print(f'{name} ({email}): {message}')
+        print(f'{name} ({email}): {message} \n'
+              f'{} ({}): {}')
     return render(request, 'catalog/index.html')
