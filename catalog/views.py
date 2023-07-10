@@ -7,4 +7,4 @@ def index(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
         print(f'{name} ({email}): {message}')
-    return render(request, 'main/index.html')
+    return render(request, 'catalog/index.html')
