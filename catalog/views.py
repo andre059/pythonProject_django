@@ -20,6 +20,9 @@ def contacts(request):
         return render(request, 'catalog/contacts.html')
 
 
+# def home(request):
+# return render(request, 'catalog/home.html', {'data': data})
+
 def home():
     html = """
     <!doctype html>
@@ -113,5 +116,3 @@ def home():
 
     print(home())
     return html
-
-
