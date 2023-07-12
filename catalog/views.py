@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 
 #  def index(request):
@@ -20,8 +21,9 @@ def contacts(request):
         return render(request, 'catalog/contacts.html')
 
 
-# def home(request):
-# return render(request, 'catalog/home.html', {'data': data})
+# def home(html):
+    # return HttpResponse(html)
+
 
 def home():
     html = """
@@ -114,5 +116,5 @@ def home():
     </html>
     """
 
-    print(home())
-    return html
+    print(HttpResponse())
+    return HttpResponse()
